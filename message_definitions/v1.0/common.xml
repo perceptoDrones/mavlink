@@ -5209,6 +5209,14 @@
       <field type="uint32_t" name="active" display="bitmask">Active outputs</field>
       <field type="float[32]" name="actuator">Servo / motor output array values. Zero values indicate unused channels.</field>
     </message>
+    <message id="400" name="GPS_NOISE">
+      <description>GPS noise stats</description>
+      <field type="uint64_t" name="time_usec" units="us">Timestamp (UNIX Epoch time or time since system boot). The receiving end can infer timestamp format (since 1.1.1970 or since system boot) by checking for the magnitude the number.</field>
+      <field type="uint16_t" name="pdop">Position dilution of precision</field>
+      <field type="float" name="lat_STD">Standard devation of postion in latitude. meters</field>
+      <field type="float" name="lng_STD">Standard devation of postion in longitude. meters</field>
+      <field type="float" name="alt_STD">Standard devation of postion in altitude. meters</field>
+    </message>
     <!-- Rover specific messages -->
     <message id="9000" name="WHEEL_DISTANCE">
       <description>Cumulative distance traveled for each reported wheel.</description>
