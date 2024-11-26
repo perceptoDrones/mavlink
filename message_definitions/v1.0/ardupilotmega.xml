@@ -268,6 +268,14 @@
         <param index="1" label="battery mask">Bitmask of batteries to reset. Least significant bit is for the first battery.</param>
         <param index="2" label="percentage" minValue="0" maxValue="100" increment="1">Battery percentage remaining to set.</param>
       </entry>
+      <entry value="42652" name="MAV_CMD_SIMULATE_GPS_LOSS">
+        <description>Simulate a GPS status (used to simulate GPS loss).</description>
+        <param index="1" label="Duration" units="ms">Simulation duration.</field>
+        <param index="2" label="Status">Status.</field>
+        <param index="3" label="Latitude offset" units="degE7">Latitude offset.</field>
+        <param index="4" label="Longitude offset" units="degE7">Longitude offset.</field>
+        <param index="5" label="Satellites visible">Number of visible satellites.</field>
+      </entry>
       <entry value="42700" name="MAV_CMD_DEBUG_TRAP" hasLocation="false" isDestination="false">
         <description>Issue a trap signal to the autopilot process, presumably to enter the debugger.</description>
         <param index="1">Magic number - set to 32451 to actually trap.</param>
