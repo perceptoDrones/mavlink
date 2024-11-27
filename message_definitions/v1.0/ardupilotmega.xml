@@ -270,11 +270,11 @@
       </entry>
       <entry value="42652" name="MAV_CMD_SIMULATE_GPS_LOSS">
         <description>Simulate a GPS status (used to simulate GPS loss).</description>
-        <param index="1" label="Duration" units="ms">Simulation duration.</param>
-        <param index="2" label="Status">Status.</param>
+        <param index="1" label="Duration" units="ms">Simulation duration. Negative value will run simulation infinitely. 0 will stop any running simulation immediately.</param>
+        <param index="2" label="Status">Status. Negative value would not alter GPS status.</param>
         <param index="3" label="Latitude offset" units="degE7">Latitude offset.</param>
         <param index="4" label="Longitude offset" units="degE7">Longitude offset.</param>
-        <param index="5" label="Satellites visible">Number of visible satellites.</param>
+        <param index="5" label="Satellites visible">Number of visible satellites. Negative value would not alter satellites visible count.</param>
       </entry>
       <entry value="42700" name="MAV_CMD_DEBUG_TRAP" hasLocation="false" isDestination="false">
         <description>Issue a trap signal to the autopilot process, presumably to enter the debugger.</description>
