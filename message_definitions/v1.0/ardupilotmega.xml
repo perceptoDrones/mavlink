@@ -269,7 +269,7 @@
         <param index="2" label="percentage" minValue="0" maxValue="100" increment="1">Battery percentage remaining to set.</param>
       </entry>
       <entry value="42652" name="MAV_CMD_SIMULATE_GPS_LOSS">
-        <description>Simulate a GPS status (used to simulate GPS loss).</description>
+        <description>Simulate a GPS status (used to simulate GPS loss). Drone will keep collecting incoming data from GPS unit, but gives the ability to override some of the reported fields.</description>
         <param index="1" label="Duration" units="ms">Simulation duration. Negative value will run simulation infinitely. 0 will stop any running simulation immediately.</param>
         <param index="2" label="Status">Status. Negative value would not alter GPS status.</param>
         <param index="3" label="Latitude offset" units="degE7">Latitude offset.</param>
